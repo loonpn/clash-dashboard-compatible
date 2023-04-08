@@ -61,7 +61,10 @@ export default defineConfig(
                 },
             },
         },
-        build: { reportCompressedSize: false },
+        build: {
+            reportCompressedSize: false,
+            target: 'es2015'
+        },
         esbuild: {
             jsxInject: "import React from 'react'",
         },
